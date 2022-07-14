@@ -15,13 +15,13 @@ function play(){
     turn += 1 ;
 
     if (userGuess < answer){
-      msg1.textContent = "Your guess id too low" ;
+      msg1.textContent = "Your guess is too low" ;
       msg2.textContent = "turn : " +turn;
       msg3.textContent = "Guessed numbers are: "+yourGuess;
       
     }
     else if (userGuess > answer){
-      msg1.textContent = "Your guess id too high";
+      msg1.textContent = "Your guess is too high";
       msg2.textContent = "turn : " +turn;
       msg3.textContent = "Guessed numbers are: "+yourGuess;
       
@@ -34,5 +34,5 @@ function play(){
       document.getElementById(myBtn).disabled=true;
     }
   }
-
+    userGuess.value="";
 }
