@@ -1,16 +1,16 @@
-var msg1=document.getElementById("message1");
-var msg2=document.getElementById("message2");
-var msg3=document.getElementById("message3");
+const msg1=document.getElementById("message1");
+const msg2=document.getElementById("message2");
+const msg3=document.getElementById("message3");
 
-var answer=Math.floor(Math.random()*100)+1;
+let answer=Math.floor(Math.random()*100)+1;
 
-var turn=0;
-var yourGuess=[];
+let turn=0;
+let yourGuess=[];
 
 function play(){
  
  
-  var userGuess=document.getElementById("guess").value;
+  let userGuess=document.getElementById("guess").value;
   
   if(userGuess <1 || userGuess >100){
     alert("Please enter a number between 1 and 100!");
